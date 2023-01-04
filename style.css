@@ -229,24 +229,32 @@ p {
     }
 }
 
-@media(max-width:480px) {
-    .input-container, .output-saida {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+media(max-width:480px) {
+    .cabecalho { 
+        justify-content: center;
+       align-items: center;
+       margin-right: 80%;
+       width: 15%;
+       font-size: 12px;
+      }
     }
-    .rodape {
-        display: block;
-        width: 100%;
+    .input-container, #output-saida {
         align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
     }
     .bnt-container button {
+        margin-bottom: 2px;
+        width: 50%;
+        align-items: center;
         top: 10px;
         display: inline-block;
     }
-  .cabecalho h1 {
-   justify-content: left;
-   display:contents;
-   align-items: center;
-  }
+.rodape, .icons h3 {
+    justify-content: center;
+    align-items: center;
+    margin-right: 80%;
+    width: 60%;
+    font-size: 12px;
 }
