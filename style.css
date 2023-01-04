@@ -217,7 +217,7 @@ p {
     .input-container {
         display: inline-block;
     }
-    .output-saida {
+    #output-saida {
         margin-top: 2%;
     }
     .bnt-container button {
