@@ -229,32 +229,51 @@ p {
     }
 }
 
-@media(max-width:480px) {
-    .cabecalho { 
-        justify-content: center;
-       align-items: center;
-       margin-right: 80%;
-       width: 15%;
-       font-size: 12px;
-      }
-    }
+@media(max-width:480px)  {
     .input-container, #output-saida {
         align-items: center;
         text-align: center;
         flex-direction: column;
         justify-content: center;
+        width: 80%;
+        margin-left: 5%;
+    }
+    #input-texto, p {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-left: 50%;
+    }
+    .btn-copiar {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-left: 30%;
+    }
+    .rodape, .icons h3 {
+        justify-content: center;
+    align-items: center;
+    margin-right: 80%;
+    width: 100%;
+    font-size: 12px;
     }
     .bnt-container button {
         margin-bottom: 2px;
-        width: 50%;
+        width: 80%;
         align-items: center;
         top: 10px;
         display: inline-block;
+        margin-left: 10%;
     }
-.rodape, .icons h3 {
-    justify-content: center;
-    align-items: center;
-    margin-right: 80%;
-    width: 60%;
-    font-size: 12px;
-}
+  .cabecalho {
+        justify-content: center;
+        align-items: center;
+       margin-right: 80%;
+       width: 50%;
+       font-size: 15px;
+      }
+    }
