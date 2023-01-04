@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    
+</head>
+<body>
+    <main class="main-container">
+        <header class="cabecalho">
+            <div class="logos">
+                <img src="image/logoA.png" alt="Logo da Alura">
+            </div>
+            <div class="titulo">
+                <h1>Decodificador de Texto</h1>
+            </div>
+        </header>
+        
+        <div class="input-container">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite o seu texto aqui..." style="resize: none"></textarea>
+                <p>ATENÇÃO: Apenas letras maiúsculas e sem acento.</p>
+            </div>
+
+            <div id="output-saida">
+                <img src="image/mensagem.png" alt="Imagem visualizando mensagem">
+                <h2>Sua mensagem aparecerá aqui</h2>
+                <span>
+                    Digite um texto que deseja criptografar ou descriptografar.
+                </span>
+            </div>
+        </div>
+
+        <div class="button">
+            <div class="bnt-container">            
+                <button onclick="criptografar()" class="bnt-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="bnt-descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/emannuel-m-moura/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
+            <a href="https://github.com/Emannuel-code" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <h5>Desenvolvido por Emannuel de Melo</h5>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
