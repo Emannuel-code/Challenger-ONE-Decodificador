@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+
+:root {
+    --corprincipal: #2C2A4A;
+    --corsecundaria: #C3C2D6;
+    --cortitulo: #2C2A4A;
+}
+
+
+body {
+    background: var(--corsecundaria);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+   h1 {
+    display: flex;
+    justify-content:flex-end;
+    color: var(--cortitulo);
+    font-size: 200%;
+    font-weight: 700;
+    border-right: 2px solid #2C2A4A;
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 0;
+    animation: blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+        left: 0;
+    }
+}
+
+.cabecalho img {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.input-container .input {
+    width: 50%;
+    height: 50%;
+}
+
+p {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+#input-texto, #output-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: var(--cortitulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 2%;
+    text-transform: uppercase;
+}
+
+#output-saida{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cortitulo);
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+    margin-right: 3%;
+    padding: 5%;
+}
+#output-saida h2 {
+    text-align: center;
+    font-size: 120%;
+    color: var(--cortitulo);
+}
+
+#output-saida span {
+    font-size: 80%;
+    text-align: center;
+}
+
+#output-saida img {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    transform: translateY(0);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+ 0% {
+    transform: translateY(0);
+  
+ }
+ 50% {
+    transform: translateY(-10px);
+    
+ }
+ 100% {
+    transform: translateY(0);
+    
+ }
+}
+
+.bnt-container button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background: #2C2A4A;
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #C3C2D6;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+    position: relative;
+    top: -100px;
+    transition: 1s;
+}
+
+.btn-copiar {
+    font-size: 15px;
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #C3C2D6;
+    background: #2C2A4A;
+    width: 150px;
+    height: 50px;
+    display: flexbox;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-copiar:hover {
+    background: var(--corsecundaria);
+    color: #2C2A4A;
+    transition: 0.5s all;
+}
+
+.bnt-container button:hover {
+   background: var(--corsecundaria);
+   color:#2C2A4A;
+    transition: 0.5s all;
+
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 2%;
+    background: var(--corprincipal);
+    color: var(--corsecundaria);
+}
+
+.rodape h3 {
+    font-size: 100%;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--corsecundaria);
+}
+
+.icons ion-icon:hover {
+    color: var(--corsecundaria);
+}
+@media(max-width:850px) {
+    .bnt-container button {
+        top: -200px;
+    }
+    .output-saida {
+        width: 300px;
+        height: 200px;
+    }
+    .btn-copiar {
+        position: relative;
+        right: 50px
+    }
+    .bnt-container button {
+        top: 20px;
+    }
+
+}
+@media(max-width:750px) {
+    .input-container {
+        display: inline-block;
+    }
+    .output-saida {
+        margin-top: 2%;
+    }
+    .bnt-container button {
+        top: 30px;
+    }
+    .cabecalho {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:480px) {
+    .input-container, .output-saida {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .rodape {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .bnt-container button {
+        top: 10px;
+        display: inline-block;
+    }
+  .cabecalho h1 {
+   justify-content: left;
+   display:contents;
+   align-items: center;
+  }
+}
